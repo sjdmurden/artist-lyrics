@@ -7,10 +7,10 @@ function Header() {
     <div className="header">
       <div className="topbox">
         <div className="title">
-          <a href="https://skamuk.com/" target="_blank">
-            <img src="./images/logo-top2.png" alt="SKAM's website" />
-            <SearchBar/>
+          <a className='image' href="https://skamuk.com/" target="_blank">
+            <img src={"../images/skamlogo.png"} alt="SKAM's logo" />
           </a>
+            <SearchBar/>
         </div>
       </div>
     </div>

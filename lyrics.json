@@ -1,11 +1,23 @@
 {
-   "ictt": {
-     "soldiers-of-rock": "<p>[Verse 1]<br>I don't mind we've got nothing to hide<br>I look at you with a glint in my eye<br>'Cause I believe this country's gone to hell<br>Looking back at the young and the old<br>Days and nights we do as we're told<br>'Cause I believe this country's gone to hell</p><p>[Pre-Chorus]<br>There's a hole in my relationship<br>No one's at work and it's come to this<br>I can do whatever we like<br>I'm taking it back tonight</p><p>[Chorus]<br>We're the minority, not the majority<br>If you don't mind, I'm taking back tonight<br>I've got nothing, but not that you care<br>If you don't mind, I'm taking it back so!</p><p>[Verse 2]<br>Back in the day they'd fly through the night<br>Out in the fields they lived and they died<br>'Cause I believe this country's gone to hell<br>Come on now let's not be shy<br>Look at me with a glint in your eye<br>'Cause I believe this country's gone to hell</p><p>[Pre-Chorus]<br>There's a hole in my relationship<br>No one's at work and it's come to this<br>I can do whatever we like<br>I'm taking it back tonight</p><p>[Chorus]<br>We're the minority, not the majority<br>If you don't mind, I'm taking back tonight<br>I've got nothing, but not that you care<br>If you don't mind, I'm taking it back so!</p><p>[Guitar solo]</p><p>[Pre-Chorus]<br>There's a hole in my relationship<br>No one's at work and it's come to this<br>I can do whatever we like<br>I'm taking it back tonight</p><p>[Chorus]<br>We're the minority, not the majority<br>If you don't mind, I'm taking back tonight<br>I've got nothing, but not that you care<br>If you don't mind, I'm taking it back so!</p><p>[Outro]<br>Soldiers of rock<br>Mercenaries of pain</p>",
-     "dead-from-the-waist-down" : "<p>[Verse 1]<br />What's up with me? <br>I can't take it back<br>It's got a hold on me <br>So I show myself against the light<br>I know it's up to me <br>If I live or die<br>Can't find the strength in me<br>I ask myself the same old why<br></p><p>[Pre-Chorus]<br>'Cause I, I'm dead from the waist down<br>Oh I, I'm living in a lost town<br></p><p>[Chorus]<br>I've been watching you play<br>Emotions take me away<br>I've been listening to lies<br>Against the light, against the light<br></p><p>[Verse 2]<br>What's up with me?<br>I'm a loaded gun<br>It's got a grasp on me<br>So I shoot myself into the sun<br>I know it's up to me<br>If I live or die<br>I've found the strength in me<br>But I've not the reason why<br></p><p>[Pre-Chorus]<br />'Cause I, I'm dead from the waist down<br>Oh I, I'm living in a lost town<br></p><p>[Chorus]<br />I've been watching you play<br />Emotions take me away<br>I've been listening to lies<br>Against the light, against the light<br></p><p>[Guitar Solo]</p><p>[Verse 3]<br />What's up with me?<br>And what's up with you?<br>Lose control of me<br></p><p>[Pre-Chorus]<br />'Cause I, I'm dead from the waist down<br>Oh I, I'm living in a lost town<br></p><p>[Chorus]<br />I've been watching you play<br />Emotions take me away<br>I've been listening to lies<br>Against the light, against the light<br></p><p>[Chorus]<br />I've been watching you play<br>Emotions take me away<br>I've been listening to lies<br>Against the light, against the light</p>"
+   "It's Come To This": {
+     "Soldiers of Rock": "album 1, song 1 lyrics",
+     "Dead From the Waist Down" : "album 1, song 2 lyrics",
+     "No Lies": "album 1, song 3 lyrics"
    },
-   "peacemaker" : {
-      "langundo" : "",
-      "make-you-pay" : "<p>[Verse 1] What do you want from me? Keep demanding more But I got you got you got you In my sights Trying to break me down Keep me running round Gonna turn out turn out turn out Turn out your lights</p><p>[Pre-Chorus] I'll hold my nerve Gonna get what you deserve</p><p>[Chorus] Why? Why you got to get in my way? I I'm the who's gonna make you pay</p><p>[Verse 2] Think you're in the right? You're all bark and no bite Gonna take my take my take my Take my time You've pushed me to the edge It's gonna be your end Gonna make it make it make it Make it alright</p><p>[Pre-Chorus] Now it's time Now you've gone And crossed the line</p><p>[Chorus] Why? Why you got to get in my way? I I'm the one to make you pay</p><p>[Guitar Solo]</p><p>[Verse 3] Counting back from ten Try to push me again And it's building building building Up inside Now your time has come Regret what you've done? But you've brought this brought this Brought this on yourself</p><p>[Pre-Chorus] Your wasted lines Wasted lines and you see Through lies</p><p>[Chorus] Why? Why you got to get in my way? I I'm the one to make you pay</p><p>[Chorus] Why? Why you got to get in my way? I I'm the one to make you pay</p>"
+   "Peacemaker" : {
+      "Langundo" : "album 2, song 1 lyrics",
+      "Make You Pay" : "album 2, song 2 lyrics",
+      "Rivers": "album 2, song 3 lyrics"
+   },
+   "The Amazing Memoirs of Geoffrey Goddard": {
+      "Prologue": "album 3, song 1",
+      "Between the Eyes": "album 3, song 2",
+      "Iron Cross": "album 3 song 3"
+   },
+   "Intravenous" : {
+      "Green Eyes" : "album 4 track 1",
+      "Wake Up": "album 4 track 2",
+      "One Track Mind": "album 4 track 3"
    }
  }
  

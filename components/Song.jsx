@@ -1,7 +1,12 @@
-function Song({ songData }) {
+import lyrics from '../lyrics.json'
+import {useParams} from 'react-router-dom'
+
+function Song() {
+  let {album, song} = useParams()
    return (
      <div className="song">
-       Song lyrics here
+      <h2>{song}</h2>
+       {lyrics[album][song]}
      </div>
    );
  }
