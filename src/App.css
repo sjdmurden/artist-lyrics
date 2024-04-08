@@ -46,6 +46,10 @@
   margin-bottom: 1rem;
 }
 
+.embed {
+  color: red
+}
+
 .albumContainer {
   display: flex;
   flex-direction: row;
@@ -56,7 +60,8 @@
 }
 
 .album {
-  /* border: 4px solid red; */
+  border: 4px solid red;
+  width: 25%
 }
 
 ul {
@@ -68,3 +73,38 @@ ul {
   display: flex;
   flex-direction: column;
 }
+
+.subsongContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  background: green;
+}
+
+.subsongs li{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.songPage {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-areas: 
+    "subsongs song embeded";
+  justify-content: center;
+}
+#subsongs {
+  grid-area: subsongs
+}
+#song {
+  grid-area: song
+}
+#embeded {
+  grid-area: embeded
+}
+
+.column {
+  border: 5px solid black
+}
+
