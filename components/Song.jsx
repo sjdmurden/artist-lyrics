@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Subsongs from "./Subsongs";
 import Embed from "./Embed";
 import '../src/App.css'
+import '../src/songpage.css'
 import parse from 'html-react-parser';
 
 
@@ -14,7 +15,7 @@ function Song() {
         <Subsongs />
       </div>
       <div className="column">
-        <div className="section" id="song">
+        <div className="lyrics" id="song">
           <h2>{song}</h2>
           {parse(lyrics[album][song])}
         </div>

@@ -16,7 +16,7 @@ function Album() {
           <ul className="songs">
             {Object.keys(lyrics[album]).map((song) => (
               <li key={song}>
-                <Link to={`/${album}/${song}`} state={{ album, song }}>
+                <Link to={`/${album}/${song}`}>
                   {song}
                 </Link>
               </li>

@@ -1,0 +1,43 @@
+.subsongContainer {
+   display: flex;
+   flex-direction: column;
+   background: green;
+   width: 90%;
+   border-radius: 1rem;
+   text-align: left;
+}
+ 
+.subsongs li{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   
+}
+ 
+.songPage {
+   display: grid;
+   grid-template-columns: 30% 30% 30%;
+   grid-template-areas: 
+     "subsongs song embeded";
+   justify-content: center;
+}
+#subsongs {
+   grid-area: subsongs;
+}
+#song {
+   grid-area: song
+}
+#embeded {
+   grid-area: embeded
+}
+.current {
+  color: black;
+}
+
+.column {
+   border: 5px solid black
+}
+ 
+.lyrics {
+   text-align: left;
+}
