@@ -20,6 +20,9 @@
    grid-template-areas: 
      "subsongs song embeded";
    justify-content: center;
+   column-gap: 40px;
+   flex-wrap: wrap;
+
 }
 #subsongs {
    grid-area: subsongs;
@@ -32,6 +35,9 @@
 }
 .current {
   color: black;
+}
+#embed {
+   height: 352px
 }
 
 .column {

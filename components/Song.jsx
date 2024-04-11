@@ -22,7 +22,7 @@ function Song() {
       </div>
       <div className="column">
         <div className="section" id="embeded">
-          <Embed />
+          <Embed song={song}/>
         </div>
       </div>
     </div>

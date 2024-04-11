@@ -14,17 +14,44 @@
    "Peacemaker" : {
       "Langundo" : "album 2, song 1 lyrics",
       "Make You Pay" : "album 2, song 2 lyrics",
-      "Rivers": "album 2, song 3 lyrics"
+      "Rivers": "album 2, song 3 lyrics",
+      "Holy City": "song lyrics here",
+      "Peacemaker" :"song lyrics here",
+      "The Wire": "song lyrics here",
+      "Fortune Favours The Brave": "song lyrics here",
+      "The Prince": "song lyrics here",
+      "In The Zone": "song lyrics here",
+      "Let's Get Rocked": "song lyrics here",
+      "More Or Less": "song lyrics here"
    },
    "The Amazing Memoirs of Geoffrey Goddard": {
       "Prologue": "album 3, song 1",
       "Between the Eyes": "album 3, song 2",
-      "Iron Cross": "album 3 song 3"
+      "Iron Cross": "album 3 song 3",
+      "Otherside": "song lyrics here",
+      "Take It Or Leave It": "song lyrics here",
+      "Peace Of Mind": "song lyrics here",
+      "Bring The Rain": "song lyrics here",
+      "Fading Before The Sun": "song lyrics here",
+      "Two Worlds": "song lyrics here",
+      "Believe": "song lyrics here",
+      "Aching Hearts": "song lyrics here",
+      "New Dawn": "song lyrics here"
    },
    "Intravenous" : {
       "Green Eyes" : "album 4 track 1",
       "Wake Up": "album 4 track 2",
-      "One Track Mind": "album 4 track 3"
+      "One Track Mind": "album 4 track 3",
+      "How Many Times": "song lyrics here",
+      "Fight The Fire": "song lyrics here",
+      "On The Run": "song lyrics here",
+      "Circles": "song lyrics here",
+      "Fade Out": "song lyrics here",
+      "I'm Not The Only One": "song lyrics here",
+      "Deadliest Sin": "song lyrics here",
+      "I Didn't Know": "song lyrics here",
+      "The Cure": "song lyrics here",
+      "Do It Again": "song lyrics here"
    }
  }
  
