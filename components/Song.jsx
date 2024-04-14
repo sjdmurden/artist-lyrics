@@ -12,7 +12,7 @@ function Song() {
   return (
     <div className="songPage">
       <div className="column" id="subsongs">
-        <Subsongs />
+        <Subsongs song={song}/>
       </div>
       <div className="column">
         <div className="lyrics" id="song">

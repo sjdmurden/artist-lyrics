@@ -9,7 +9,6 @@ function Embed({ song }) {
   }
 
   const { id, album } = trackInfo;
-  console.log(trackInfo, '<-- trackInfo')
   const albumImage = album.images[0].url
 
   return (
@@ -21,7 +20,7 @@ function Embed({ song }) {
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
-      <img src={albumImage} alt="Album cover" />
+      {/* <img src={albumImage} alt="Album cover" /> */}
     </div>
   );
 }

@@ -27,6 +27,8 @@ async function fetchAccessToken() {
 }
 
 async function searchForTrack(song, token) {
+  const encodedSong = encodeURIComponent(song);
+
   const searchParams = {
     method: "GET",
     headers: {
@@ -49,6 +51,8 @@ async function searchForTrack(song, token) {
 }
 
 export function useTrackInfo(song) {
+  const encodedSong = encodeURIComponent(song);
+  console.log(song);
   const [token, setToken] = useState();
   const [trackInfo, setTrackInfo] = useState(null);
 
@@ -60,12 +64,12 @@ export function useTrackInfo(song) {
 
   useEffect(() => {
     if (token) {
-      searchForTrack(song, token).then((trackData) => {
+      searchForTrack(encodedSong, token).then((trackData) => {
         setTrackInfo(trackData);
       });
     }
-  }, [token, song]);
-
+  }, [token, encodedSong]);
+  console.log(trackInfo);
   return trackInfo;
 }
 

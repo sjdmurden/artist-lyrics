@@ -3,17 +3,19 @@
   padding: 0rem;
   text-align: center;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #242424;
+  background-color: #ffffff;
 }
 
-.header {
-  background: blue;
-  margin-top: 0rem;
-  margin-bottom: 1rem;
+.topbox {
+  background: rgb(0, 0, 0);
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
-.embed {
-  color: red
+
+.search-bar{
+  width: 15rem
 }
 
 .albumContainer {
@@ -27,6 +29,7 @@
 .album {
   width: 25%;
   margin-bottom: 2rem;
+  margin-top: 2rem
 }
 .cardMediaImg {
   height: 8rem;
@@ -34,8 +37,8 @@
   
 }
 
-ul {
-  list-style-type: none;
+ol {
+  padding-bottom: 1rem
 }
 
 .songs{
