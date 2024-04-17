@@ -1,24 +1,36 @@
 #root {
-  max-width: 1280px;
-  padding: 0rem;
   text-align: center;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #ffffff;
+  background: rgb(62, 0, 0);
 }
 
-.topbox {
-  background: rgb(0, 0, 0);
+body {
+  margin: 0
+}
+a{
+  text-decoration: none;
+}
+
+/* .topbox {
   align-items: center;
   display: flex;
   justify-content: space-around;
-}
+  padding: 1rem;
+} */
 
 
 .search-bar{
   width: 15rem
 }
+.disk {
+  transform: scale(1)
+}
+.disk :hover {
+  color: rgb(143, 143, 143);
+  transition: 0.5s
+}
 
-.albumContainer {
+/* .albumContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -34,7 +46,11 @@
 .cardMediaImg {
   height: 8rem;
   width: 100%
-  
+} */
+#img{
+  width: 100%;
+  height: auto;
+  border-radius: 4px 4px 0 0;
 }
 
 ol {

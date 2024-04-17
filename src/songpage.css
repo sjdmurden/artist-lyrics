@@ -18,7 +18,7 @@
    flex-wrap: wrap;
 }
  
-.songPage {
+/* .songPage {
    display: grid;
    grid-template-columns: 30% 30% 30%;
    grid-template-areas: 
@@ -32,21 +32,26 @@
 #subsongs {
    grid-area: subsongs;
 }
+
+
 #song {
    grid-area: song
 }
+
 #embeded {
    grid-area: embeded
 }
 .current {
   color: black;
 }
+*/
 #embed {
    height: 352px;
    border: none
-}
+} 
 
  
 .lyrics {
    text-align: left;
+   color: white
 }
