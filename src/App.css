@@ -1,23 +1,21 @@
 #root {
   text-align: center;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background: rgb(62, 0, 0);
+  background: rgb(166, 55, 55)
 }
 
 body {
-  margin: 0
+  margin: 0;
 }
 a{
   text-decoration: none;
 }
 
-/* .topbox {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
-} */
-
+.header {
+  background: rgb(62, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-bottom: 0.8rem
+}
 
 .search-bar{
   width: 15rem
@@ -30,23 +28,6 @@ a{
   transition: 0.5s
 }
 
-/* .albumContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 100px;
-}
-
-.album {
-  width: 25%;
-  margin-bottom: 2rem;
-  margin-top: 2rem
-}
-.cardMediaImg {
-  height: 8rem;
-  width: 100%
-} */
 #img{
   width: 100%;
   height: auto;

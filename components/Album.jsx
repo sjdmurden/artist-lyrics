@@ -11,17 +11,17 @@ import Stack from "@mui/material/Stack";
 import { Grid, Typography, Paper, styled } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
-  margin: '1rem',
+  margin: "1rem",
   padding: theme.spacing(0),
-  textAlign: 'center',
+  textAlign: "center",
   color: theme.palette.text.secondary,
-}))
+}));
 
 function Album() {
   return (
-    <Grid container spacing={{xs: 0, sm: 1}}>
+    <Grid container spacing={{ xs: 0, sm: 1 }} justifyContent="center">
       {Object.entries(lyrics).map(([albumName, albumInfo]) => {
         const lastSong =
           Object.keys(albumInfo)[Object.keys(albumInfo).length - 1];
@@ -35,26 +35,24 @@ function Album() {
         const albumImage = album.images[0].url;
 
         return (
-          
-          <Grid item xs={8} sm={3} key={id} >
+          <Grid item xs={9} sm={3} key={id}>
             <Item>
-              <img id='img'
-                src={albumImage}
-                alt={albumName}
-              />
-              <Typography variant="h6" gutterBottom color={'black'}>
+              <img id="img" src={albumImage} alt={albumName} />
+              <Typography variant="h6" gutterBottom color={"black"}>
                 {albumName}
               </Typography>
               <Typography variant="body2">
-                Released: {album.release_date.slice(0, 4)}
+                Released: {album.release_date.slice(0, 4)==='2023' ? '2021' : album.release_date.slice(0, 4)}
               </Typography>
-              <ol className="songs">
-                {Object.keys(lyrics[albumName]).map((song) => (
-                  <li key={song}>
-                    <Link to={`/${albumName}/${song}`}>{song}</Link>
-                  </li>
-                ))}
-              </ol>
+              <Typography variant="subtitle1">
+                <ol className="songs">
+                  {Object.keys(lyrics[albumName]).map((song) => (
+                    <li key={song}>
+                      <Link to={`/${albumName}/${song}`}>{song}</Link>
+                    </li>
+                  ))}
+                </ol>
+              </Typography>
             </Item>
           </Grid>
         );
@@ -64,43 +62,3 @@ function Album() {
 }
 
 export default Album;
-
-// <div className="albumContainer">
-//   {albums.map((album1, index) => {
-//     const trackInfo = useTrackInfo(firstSongs[index]);
-
-//     if (!trackInfo) {
-//       return <div>Loading...</div>;
-//     }
-
-//     const { id, album } = trackInfo;
-
-//     const albumImage = album.images[0].url;
-//     return (
-//       <Card className="album" sx={{ maxWidth: 345 }}>
-//         <CardMedia
-//           className="cardMediaImg"
-//           image={albumImage}
-//           title="album cover"
-//         />
-//         <CardContent>
-//           <Typography gutterBottom variant="h5" component="div">
-//             {album1}
-//           </Typography>
-//           <Typography variant="h7">
-//             {album.release_date.slice(0, 4)}
-//           </Typography>
-//           <Typography variant="body2" color="text.secondary">
-// <ol className="songs">
-//   {Object.keys(lyrics[album1]).map((song) => (
-//     <li key={song}>
-//       <Link to={`/${album1}/${song}`}>{song}</Link>
-//     </li>
-//   ))}
-// </ol>
-//           </Typography>
-//         </CardContent>
-//       </Card>
-//     );
-//   })}
-// </div>

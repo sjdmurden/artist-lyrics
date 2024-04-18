@@ -18,25 +18,23 @@ const Item = styled(Paper)(({ theme }) => ({
 function Song() {
   let { album, song } = useParams();
   return (
-    <Grid container spacing={{ xs: 0, sm: 1 }}>
-      <Grid item xs={12} sm={4} order={{xs: 2, sm: 1}}>
-        <Item className="column" id="subsongs">
+    <Grid container spacing={{ xs: 0, sm: 0 }} justifyContent="center">
+      <Grid item xs={11} sm={4} order={{ xs: 2, sm: 1 }}>
+        <Item>
           <Subsongs song={song} />
         </Item>
       </Grid>
-      <Grid item xs={12} sm={4} order={{xs: 1, sm: 2}}>
-        <Item className="column">
-          <div className="lyrics" id="song">
+      <Grid item xs={11} sm={4} order={{ xs: 1, sm: 2 }}>
+        <Item>
+          <div className="lyrics">
             <h2>{song}</h2>
             {parse(lyrics[album][song])}
           </div>
         </Item>
       </Grid>
-      <Grid item xs={12} sm={4} order={{xs: 3, sm: 3}}>
-        <Item className="column">
-          <div className="section" id="embeded">
-            <Embed song={song} />
-          </div>
+      <Grid item xs={11} sm={4} order={{ xs: 3, sm: 3 }}>
+        <Item>
+          <Embed song={song} />
         </Item>
       </Grid>
     </Grid>
