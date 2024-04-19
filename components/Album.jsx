@@ -35,7 +35,7 @@ function Album() {
         const albumImage = album.images[0].url;
 
         return (
-          <Grid item xs={9} sm={3} key={id}>
+          <Grid item xs={9} sm={5} md={3} key={id}>
             <Item>
               <img id="img" src={albumImage} alt={albumName} />
               <Typography variant="h6" gutterBottom color={"black"}>
