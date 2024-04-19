@@ -8,8 +8,14 @@ function Embed({ song }) {
     return <div>Loading...</div>;
   }
 
-  const { id, album } = trackInfo;
-  const albumImage = album.images[0].url
+  let { id, album } = trackInfo;
+
+  if (song === "Let's Get Rocked"){
+    id = '1EABWGm22FgzTh7gs4pAId'
+  }
+  if (song === "I'm Not The Only One"){
+    id = '4tHmuAOt2AHtJ6E8tuj02m'
+  }
 
   return (
     <div className="embed">
@@ -20,7 +26,6 @@ function Embed({ song }) {
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
-      {/* <img src={albumImage} alt="Album cover" /> */}
     </div>
   );
 }

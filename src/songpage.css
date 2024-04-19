@@ -17,6 +17,9 @@
    flex-direction: column;
    flex-wrap: wrap;
 }
+.current {
+   font-weight: bold
+}
 
 #embed {
    height: 352px;

@@ -4,10 +4,16 @@ import { useParams, Link } from "react-router-dom";
 import "../src/songpage.css";
 import { useTrackInfo } from "../api";
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
 function Subsongs() {
   let { album, song } = useParams();
   const subsongsArray = Object.keys(lyrics[album]);
-
   const trackInfo = useTrackInfo(song);
 
   if (!trackInfo) {
@@ -20,19 +26,20 @@ function Subsongs() {
     <div className="subsongContainer">
       <img src={albumImage} alt="Album cover" />
 
-      <ul className="subsongs">
+      <ol className="subsongs">
       <h2>{album}</h2>
         {subsongsArray.map((subsong) => (
           <li key={subsong}>
             <Link
               to={`/${album}/${subsong}`}
               className={subsong === song ? "current" : ""}
+              onClick={scrollToTop}
             >
               {subsong}
             </Link>
           </li>
         ))}
-      </ul>
+      </ol>
     </div>
   );
 }

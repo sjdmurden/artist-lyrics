@@ -3,13 +3,12 @@ import "../src/App.css";
 import SearchBar from "./SearchBar";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCompactDisc, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { faCompactDisc } from "@fortawesome/free-solid-svg-icons";
 import { Grid, Typography, Paper, styled } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
-  margin: "1rem",
+  margin: "0.8rem",
   backgroundColor: "transparent",
-  // backgroundColor: 'black',
   boxShadow: "none",
   color: "white",
 }));
@@ -17,7 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
 function Header() {
   return (
     <div className="header">
-      <Grid container rowSpacing={{ xs: 0, sm: 0 }}>
+      <Grid container rowSpacing={{ xs: 0, sm: 0 }} justifyContent={'center'}>
         <Grid item sm={4} xs={2}>
           <Item style={homeButton}>
             <Link to={"/"} color="white">
@@ -33,11 +32,11 @@ function Header() {
         <Grid item sm={4} xs={8}>
           <Item>
             <a className="image" href="https://skamuk.com/" target="_blank">
-              <img src={"../images/logo-top2.png"} alt="SKAM's logo" />
+              <img src={"/assets/logo-top2.png"} alt="SKAM's logo" />
             </a>
           </Item>
         </Grid>
-        <Grid item sm={4} xs={12}>
+        <Grid item sm={4} xs={8} >
           <Item>
             <SearchBar />
           </Item>

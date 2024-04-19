@@ -45,56 +45,10 @@ function SearchBar() {
         resultStringKeyName="trackName"
         onSelect={handleOnSelect}
         formatResult={formatResult}
+        placeholder="Search"
       />
     </div>
   );
 }
 
 export default SearchBar;
-
-// const navigate = useNavigate();
-// const [searchResults, setSearchResults] = useState([]);
-
-// useEffect(() => {
-//   const items = [];
-//   for (const album in lyrics) {
-//     const tracks = Object.keys(lyrics[album]);
-//     tracks.forEach((track) => {
-//       items.push({
-//         id: items.length,
-//         trackName: track,
-//         albumName: album,
-//       });
-//     });
-//   }
-//   console.log(items)
-// }, [])
-
-// const handleOnSearch = (searchInput, results) => {
-//   console.log("Search Input:", searchInput)
-//   console.log('results: ', results);
-// };
-
-// const handleOnSelect = (item) => {
-//   const { albumName, trackName } = item;
-//   navigate(`/${albumName}/${trackName}`);
-// };
-
-// const formatResult = (item) => {
-//   return (
-//     <div>
-//       {item.trackName}
-//     </div>
-//   );
-// };
-
-// return (
-//   <div className="search-bar">
-//     <ReactSearchAutocomplete
-//       items={searchResults}
-//       onSearch={handleOnSearch}
-//       onSelect={handleOnSelect}
-//       formatResult={formatResult}
-//     />
-//   </div>
-// );

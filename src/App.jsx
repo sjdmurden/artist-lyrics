@@ -12,7 +12,7 @@ import {
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ scrollBehavior: 'smooth' }}>
       <Header />
       <Routes>
         <Route path="/" element={<Album/>} />

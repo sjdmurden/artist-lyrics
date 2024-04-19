@@ -19,6 +19,13 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
 function Album() {
   return (
     <Grid container spacing={{ xs: 0, sm: 1 }} justifyContent="center">
@@ -48,7 +55,7 @@ function Album() {
                 <ol className="songs">
                   {Object.keys(lyrics[albumName]).map((song) => (
                     <li key={song}>
-                      <Link to={`/${albumName}/${song}`}>{song}</Link>
+                      <Link to={`/${albumName}/${song}`} onClick={scrollToTop}>{song}</Link>
                     </li>
                   ))}
                 </ol>
