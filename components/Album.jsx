@@ -31,7 +31,7 @@ function Album() {
     <Grid container spacing={{ xs: 0, sm: 1 }} justifyContent="center">
       {Object.entries(lyrics).map(([albumName, albumInfo]) => {
         const lastSong =
-          Object.keys(albumInfo)[Object.keys(albumInfo).length - 1];
+          Object.keys(albumInfo)[Object.keys(albumInfo).length - 2];
         const trackInfo = useTrackInfo(lastSong);
 
         if (!trackInfo) {

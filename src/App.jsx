@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
 import Album from '../components/Album';
 import Song from "../components/Song";
+import Footer from '../components/Footer'
 import {
   Route,
   Routes,
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Album/>} />
         <Route path="/:album/:song" element={<Song/>} />
       </Routes>
+      <Footer />
     </div>
   );
 }

@@ -44,4 +44,10 @@ ol {
   text-align: left;
 }
 
-
+.footer {
+  background: rgb(62, 0, 0);
+  color: white;
+  font-size:small;
+  padding: 0.7rem;
+  margin-top: 1.5rem
+}
