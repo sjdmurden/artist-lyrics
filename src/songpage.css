@@ -1,11 +1,19 @@
+.subsongOver {
+   display: flex;
+   justify-content: center;
+}
+
 .subsongContainer {
    display: flex;
+   justify-content: center;
    flex-direction: column;
    background: rgb(207, 207, 207);
    width: 90%;
    border-radius: 0.5rem;
    text-align: left;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .subsongContainer img {
    border-top-left-radius: 0.5rem;
    border-top-right-radius: 0.5rem;
@@ -18,16 +26,24 @@
    flex-wrap: wrap;
 }
 .current {
-   font-weight: bold
+   font-weight: bold;
 }
 
 #embed {
    height: 352px;
-   border: none
+   border: none; 
 } 
 
 .lyrics {
    text-align: left;
    color: white;
    margin-bottom: 3rem
+}
+
+.embed-loading {
+   background: rgb(222, 78, 78);
+   color: white;
+   border: none;
+   border-radius: 7px;
+   padding: 1rem
 }

@@ -28,7 +28,7 @@ function Song() {
         <Item>
           <div className="lyrics">
             <h2>{song}</h2>
-            {parse(lyrics[album][song])}
+            {parse(lyrics[album].songs[song])}
           </div>
         </Item>
       </Grid>

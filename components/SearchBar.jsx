@@ -6,7 +6,7 @@ import lyrics from "../lyrics.json";
 function SearchBar() {
   const items = [];
   for (const album in lyrics) {
-    const tracks = Object.keys(lyrics[album]);
+    const tracks = Object.keys(lyrics[album].songs);
     tracks.forEach((track) => {
       items.push({
         id: items.length,
@@ -15,7 +15,6 @@ function SearchBar() {
       });
     });
   }
-  // console.log(items);
 
   const navigate = useNavigate();
   const handleOnSelect = (item) => {

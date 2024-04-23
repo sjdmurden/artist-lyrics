@@ -1,11 +1,11 @@
 #root {
   text-align: center;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background: rgb(166, 55, 55)
 }
 
 body {
   margin: 0;
+  background: rgb(166, 55, 55)
 }
 a{
   text-decoration: none;

@@ -22,20 +22,51 @@ const Item = styled(Paper)(({ theme }) => ({
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
 };
 
 function Album() {
   return (
     <Grid container spacing={{ xs: 0, sm: 1 }} justifyContent="center">
-      {Object.entries(lyrics).map(([albumName, albumInfo]) => {
-        const lastSong =
-          Object.keys(albumInfo)[Object.keys(albumInfo).length - 2];
+      {Object.entries(lyrics).map(([albumName, albumData]) => {
+        const lastSong = Object.keys(albumData.songs)[
+          Object.keys(albumData.songs).length - 2
+        ];
         const trackInfo = useTrackInfo(lastSong);
 
         if (!trackInfo) {
-          return <div key={albumName}>Loading...</div>;
+          return (
+            <Grid item xs={9} sm={5} md={3} key={albumName}>
+              <Item>
+                <img
+                  id="img"
+                  src={`https://placehold.co/400?text=${albumName}`}
+                  alt={albumName}
+                />
+                <Typography variant="h6" gutterBottom color={"black"}>
+                  {albumName}
+                </Typography>
+                <Typography variant="body2">
+                  {albumData.releaseDate}
+                </Typography>
+                <Typography variant="subtitle1">
+                  <ol className="songs">
+                    {Object.keys(albumData.songs).map((song) => (
+                      <li key={song}>
+                        <Link
+                          to={`/${albumName}/${song}`}
+                          onClick={scrollToTop}
+                        >
+                          {song}
+                        </Link>
+                      </li>
+                    ))}
+                  </ol>
+                </Typography>
+              </Item>
+            </Grid>
+          );
         }
 
         const { id, album } = trackInfo;
@@ -48,14 +79,14 @@ function Album() {
               <Typography variant="h6" gutterBottom color={"black"}>
                 {albumName}
               </Typography>
-              <Typography variant="body2">
-                Released: {album.release_date.slice(0, 4)==='2023' ? '2021' : album.release_date.slice(0, 4)}
-              </Typography>
+              <Typography variant="body2">{albumData.releaseDate}</Typography>
               <Typography variant="subtitle1">
                 <ol className="songs">
-                  {Object.keys(lyrics[albumName]).map((song) => (
+                  {Object.keys(albumData.songs).map((song) => (
                     <li key={song}>
-                      <Link to={`/${albumName}/${song}`} onClick={scrollToTop}>{song}</Link>
+                      <Link to={`/${albumName}/${song}`} onClick={scrollToTop}>
+                        {song}
+                      </Link>
                     </li>
                   ))}
                 </ol>

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import lyrics from "../lyrics.json";
 import { useParams, Link } from "react-router-dom";
 import "../src/songpage.css";
 import { useTrackInfo } from "../api";
+import { Grid, Typography, Paper, styled } from "@mui/material";
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -13,21 +14,25 @@ const scrollToTop = () => {
 
 function Subsongs() {
   let { album, song } = useParams();
-  const subsongsArray = Object.keys(lyrics[album]);
+  const albumData = lyrics[album];
+  const subsongsArray = albumData ? Object.keys(albumData.songs) : [];
   const trackInfo = useTrackInfo(song);
+  const [albumImage, setAlbumImage] = useState(`https://placehold.co/400?text=${album}`);
 
-  if (!trackInfo) {
-    return <div>Loading...</div>;
-  }
-
-  const albumImage = trackInfo.album.images[0].url
+  useEffect(() => {
+    if (trackInfo && trackInfo.album.images.length > 0) {
+      setAlbumImage(trackInfo.album.images[0].url);
+    }
+  }, [trackInfo]);
 
   return (
+    <div className="subsongOver">
+
     <div className="subsongContainer">
       <img src={albumImage} alt="Album cover" />
-
       <ol className="subsongs">
-      <h2>{album}</h2>
+        <h2>{album}<br/>
+        <span style={{fontSize: '1rem'}}>{albumData.releaseDate}</span></h2>
         {subsongsArray.map((subsong) => (
           <li key={subsong}>
             <Link
@@ -40,6 +45,7 @@ function Subsongs() {
           </li>
         ))}
       </ol>
+    </div>
     </div>
   );
 }
