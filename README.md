@@ -1,8 +1,8 @@
-# React + Vite
+# Artist lyrics page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a lyrics website for Skam, a rock band from Leicester. Their lyrics aren't on any major song lyric website like Genius or Musixmatch so I decided to make one myself. This site uses responsive web design ensuring it renders well on both both mobile and desktop screen sizes and was built originally for my own personal use.
 
-Currently, two official plugins are available:
+The hosted website can be found [here](https://skam-lyrics-sjdm.netlify.app/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech used:
+React, Node.js, CSS, Spotify API.
